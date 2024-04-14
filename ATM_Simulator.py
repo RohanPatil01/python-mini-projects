@@ -3,7 +3,8 @@ class Atm:
     def __init__(self):
         self.pin = ""
         self.balance = 0
-        self.menu() # to call the menu() function
+        self.menu()
+        
     def menu(self):
         user_input = input("""
         Hello, How can I help you today?
@@ -14,6 +15,7 @@ class Atm:
             5. Press 5 to Deposit Money.
             6. Press anything else to exit.
         """)
+        
         if user_input == "1":
             self.create_pin()
         elif user_input == "2":
@@ -31,7 +33,7 @@ class Atm:
         user_pin = input("Enter your pin: ")
         self.pin = user_pin
 
-        user_balance = int(input('Enter your balance: ')) #It is logically incorrect but we don't have any data, therefore we are asking from the user.
+        user_balance = 0 #It is logically incorrect but we don't have any data, therefore we are asking from the user.
         self.balance = user_balance
 
         print('Your pin is created successfully!')
