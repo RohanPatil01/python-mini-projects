@@ -12,4 +12,4 @@ elif bmi <= 39.9:
 else:
     remark = "Obese"
 
-print(f"Your BMI is {bmi} and you are {remark}.")
+print(f"Your BMI is {bmi} and you fall under {remark} category.")
